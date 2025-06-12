@@ -1,21 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leticia Gift</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <title>Para você, Letícia 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #ffe6f2;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 30px;
+      color: #d63384;
+    }
+
+    .hello-img {
+      margin-top: 50px;
+    }
+
+    .hello-img img {
+      width: 200px;
+      animation: flutuar 3s ease-in-out infinite;
+    }
+
+    @keyframes flutuar {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background-color: #ff4da6;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff3399;
+    }
+
+    .emoji-bg {
+      font-size: 40px;
+      animation: girar 5s linear infinite;
+    }
+
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
+  <div class="hello-img">
+    <img src="/img/5eaaadbcad89b60004c4c7cd.png" alt="Hello Kitty segurando coração">
+  </div>
 
-    <h1 class="title">Feliz dia dos namorados, vida!!!</h1>
-    
-    <a href="conteudo/gift.html" class="cliqueaqui">Clique aqui para a surpresa!!!</a>
-    
+  <h1>Oi, Letícia! 🩷<br>Tem um presente especial pra você...</h1>
 
+  <div class="emoji-bg">🎁💖🎀</div>
+
+  <button onclick="irParaPresente()">Abrir meu presente</button>
+
+  <script>
+    function irParaPresente() {
+      window.location.href = "/conteudo/gift.html"; // Nome do arquivo do presente principal
+    }
+  </script>
 </body>
 </html>
