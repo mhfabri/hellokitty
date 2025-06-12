@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
   <title>Dia dos Namorados</title>
   <style>
+
     body {
       background-color: #ffe6f2;
       color: #d63384;
-      font-family: 'Arial', sans-serif;
+      font-family: "Lobster", sans-serif;
+      font-weight: 400;
+      font-style: normal;
       text-align: center;
       padding: 20px;
       background-image: url('https://www.transparenttextures.com/patterns/hearts.png');
@@ -16,13 +22,13 @@
 
     h1 {
       color: #ff4da6;
-      font-size: 2em;
+      font-size: 3em;
     }
 
     p {
       max-width: 600px;
       margin: auto;
-      font-size: 18px;
+      font-size: 22px;
       line-height: 1.5;
     }
 
@@ -38,13 +44,13 @@
       border-radius: 10px;
       padding: 10px 15px;
       margin: 10px;
-      font-size: 20px;
+      font-size: 32px;
       width: 100px;
     }
 
-    .imagem {
+    img {
       margin: 20px 0;
-      width: 50%;
+      width: 30%;
     }
 
     iframe {
@@ -55,7 +61,7 @@
     .footer {
       max-width: 600px;
       margin: auto;
-      font-size: 18px;
+      font-size: 32px;
       line-height: 1.5;
     }
     
@@ -67,6 +73,8 @@
     animation: cair 5s linear infinite;
     z-index: 999;
   }
+
+
 
   @keyframes cair {
     0% {
@@ -84,12 +92,12 @@
   <div class="imagem">
     <img src="img/hello_kitty_PNG22.png" alt="hello kitty image"/>
   </div>
-
-  <h1>FELIZ DIA DOS NAMORADOS VIDA!!!💖</h1>
+  
+  <h1>Feliz dia dos namorados, vida!!!💖</h1>
   <p>
-    Minha princesa, você é tão maravilhosa ao ponto de me fazer pensar em tu o dia inteiro, sempre vem você na minha mente e eu sempre quis dizer pra você que te amo mais que tudo nesse mundo. Você é minha perfeição, uma linda, maravilhosa, perfeita. Quero muito que você seja feliz ao meu lado, vida. Sempre vou ser seu, nunca vou te trocar por nada nesse mundo. Você é minha princesa e EU TE AMO MUITO!!!
+    Minha princesa, você é tão maravilhosa ao ponto de me fazer pensar em tu o dia inteiro, sempre vem você na minha mente e eu sempre quis dizer pra você que te amo mais que tudo nesse mundo. Você é minha perfeição, uma linda, maravilhosa, perfeita. Quero muito que você seja feliz ao meu lado, vida. Sempre vou ser seu, nunca vou te trocar por nada nesse mundo. Você é minha princesa e <br>EU TE AMO MUITO!!!
   </p>
-
+  
   <h2>Inicio de tudo foi a:</h2>
   <div class="contador">
     <div class="tempo"><span id="anos">00</span><br>anos</div>
@@ -100,15 +108,16 @@
     <div class="tempo"><span id="segundos">00</span><br>segundos</div>
   </div>
   
-    <div class="footer">
-    Desde 23 de março de 2025, quando começamos a conversar e eu me apaixonei mais ainda por você. Lembre sempre vida, EU TE AMO MAIS LA LA LA LA.
-    </div>
-
+  <div class="footer">
+    Desde 23 de março de 2025, quando começamos a conversar e eu me apaixonei mais ainda por você. Lembre sempre vida, <br> EU TE AMO MAIS LA LA LA LA.
+  </div>
+  
   <!-- Música do Spotify -->
   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6G2Zfe5YH4JtTxyB1ulXTd?utm_source=generator&theme=0" width="80%" height="10%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-
-
+  
+  
+  
+  <a id="back" href="index.html">Voltar</a>
   <script>
     function atualizarTempo() {
       const inicio = new Date("2025-03-23T00:00:00");
