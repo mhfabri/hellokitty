@@ -5,12 +5,19 @@
   <title>Para você, Letícia 💖</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+
+    :root {
+      --cor-principal: #9d4edd;
+      --cor-fundo: #25063e;
+      --cor-botao: #532c73;
+    }
+
     body {
-      background-color: #ffe6f2;
+      background-color: var(--cor-fundo);
       font-family: 'Comic Sans MS', cursive, sans-serif;
       text-align: center;
       padding: 30px;
-      color: #d63384;
+      color: var(--cor-principal);
     }
 
     .hello-img {
@@ -36,7 +43,7 @@
       padding: 15px 30px;
       font-size: 18px;
       color: white;
-      background-color: #ff4da6;
+      background-color: var(--cor-botao);
       border: none;
       border-radius: 30px;
       cursor: pointer;
@@ -45,7 +52,7 @@
     }
 
     button:hover {
-      background-color: #ff3399;
+      background-color: var(--cor-principal);
     }
 
     .emoji-bg {
